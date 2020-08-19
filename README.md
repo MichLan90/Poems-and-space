@@ -1,6 +1,7 @@
 Titel: Poems-and-space
-Beskrivning av projekt: Få olika bilder från rymden varje dag (NASA API) och generera en random ditk om också om rymden (eget API)
-Krav för godkänt:
+Beskrivning av projekt: Få olika bilder från rymden varje dag (NASA API) och generera en random dikt om också om rymden (eget API)
+
+Följer krav för godkänt:
 
 Skapa ett API baserat på en valfri resurs (GET & POST)
 Samtliga endpoints skall kunna nås via en REST Client fil (.rest)
@@ -14,3 +15,7 @@ Uppgiften lämnas in i tid!
 Instruktioner:
 Installationen av node modules sker via den följande kommando i terminalen:
     npm install
+    
+    
+ENDPOINTS kan testas via REST filen.
+
