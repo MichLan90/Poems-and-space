@@ -1,0 +1,8 @@
+Debugging:
+1. POST req: the input are added with typos (extras // and "")
+      Problems with ID! --> auto-increment?! Now its hard-coded
+
+2. Delete req: "poem deleted"... LIAR. It is NOT.
+
+3. Fråga: behöver man ha en knapp som visar "allPoem" "singlePoem" osv eller 
+     ska man testa det i REST filen?

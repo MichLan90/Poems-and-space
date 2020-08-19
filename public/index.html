@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems from outer space</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Poems from outer space</h1>
+        <h4>Get everyday a different picture from NASA and a different poem about the infinite space!</h4>
+    </nav>
+    <div id="container">
+
+        <div id="poem-container">
+
+            <h2 style="text-align: center; color:cornflowerblue">Your poem:
+            </h2>
+
+        <div id="showPoem">
+            <h1 id="title"><!-- Title of poem injected --></h1>
+            <h2 id="author"><!-- Author of poem injected --></h2>
+            <p id="text"><!-- Text of poem injected --></p>
+        </div>
+
+        <div id="image-container">
+            <h2 style="text-align: center; color:cornflowerblue">NASA picture of the day:
+            </h2>
+            <div id="date">  <!-- INJECTED BY EXTERNAL NASA API --></div> <br>
+            <img id="pic" src="" alt="NASA Picture Of The Day" width="100%">
+            <iframe id="video" src="" title="Nasa Picture of the Day" width="500px" height="500px"></iframe>
+        </div>
+
+
+    </div>
+     
+    <div id="form-container">
+        <form method="post" action="/poems">
+            
+                <h1>Send us your poem!</h1>
+                <label>Your title:</label> <br>
+                <input type="text" requirede name="title" id="titleInput" style="width:500px"> <br> 
+                <label>Your name:</label> <br> 
+                <input type="text" required name="author" id="authorInput" style="width:500px"> <br> <br>
+                <label>Your poem:</label> <br>
+                <input type="text" required name="text" id="textInput" style="width:500px;height:500px">
+                <br>
+            
+                <button type="submit" onclick="addPoem()" id="sendBtn">Send</button>
+        
+        </form>
+    </div>
+
+
+
+
+    </div>
+
+    
+</body>
+</html>

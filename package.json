@@ -1,0 +1,15 @@
+{
+  "name": "poems-from-outer-space",
+  "version": "1.0.0",
+  "description": "Upptäcka olika bilder varje dag och läsa en dikt om rymden",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Michelle Lanaro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

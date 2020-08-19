@@ -1,0 +1,113 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    border: none;
+    margin: 0 auto;
+}
+
+#showPoem {
+    width: "50%";
+    text-align: center;
+    margin-top: 25px;
+    text-align: center;
+    animation: fadein 5s;
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#text {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#container {
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+#poem-container {
+    padding: 5%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(193, 205, 218);
+}
+
+#image-container {
+    width: 50%;
+    /*display: flex;*/
+    padding: 5%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#form-container {
+    padding: 15px;
+    background-color: rgb(172, 181, 190);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#sendBtn {
+    background-color: rgb(185, 218, 231);
+    padding: 8px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#linkToPoems {
+    color: white;
+    background-color: rgb(78, 78, 76);
+}
+
+#linkToPoems a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
