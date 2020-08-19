@@ -13,8 +13,9 @@ Projektmappen innehåller en README.md fil (läs ovan för mer info)
 Uppgiften lämnas in i tid!
 
 Instruktioner:
-Installationen av node modules sker via den följande kommando i terminalen:
-    npm install
+NODEJS måsta installeras. ( https://nodejs.org/en/ )
+Installationen av node modules och express sker via den följande kommando i terminalen:
+    npm install express
     
     
 ENDPOINTS kan testas via REST filen.
