@@ -41,6 +41,18 @@ app.post('/poems', (req, res, next) => {
     console.log(response)
 })
 
+// Delete a poem
+app.delete('/poems/:id', (req, res) => {
+    const paramId = req.params.id
+    let poemIdFound = allPoems.findIndex((poem) => poem.id == paramId)   
+
+    if (poemIdFound == -1) {
+        res.status(404).json({status: "Poem not found"})
+    } 
+    allPoems.splice(poemIdFound, -1)
+    res.json({status: "Poem deleted"})
+
+})
 
 // Id generator
 function idGen () {

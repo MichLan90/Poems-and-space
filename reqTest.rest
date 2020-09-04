@@ -6,3 +6,6 @@ GET http://localhost:8080/poems/7
 ###
 POST http://localhost:8080/poems/ 
 Content-Type: application/json
+
+###
+DELETE http://localhost:8080/poems/7

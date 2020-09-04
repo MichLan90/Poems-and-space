@@ -1,11 +1,32 @@
-function getAll() {
-    console.log("Get all")
-    makeRequest("/poems", "GET")
-} 
+async function getAll() {
+    const allPoems = await fetch("/poems", {method: "GET"})
+    const data = await allPoems.json()
+    const div = document.getElementById("all-poems-list")
+    for (let i = 0; i < data.length; i++) {
+
+        let titleEl = document.createElement("h1")
+        titleEl.innerText = data[i].title
+        div.appendChild(titleEl)
+
+        let authorEl = document.createElement("h3")
+        authorEl.innerText = data[i].author
+        div.appendChild(authorEl)
+
+        let textEl = document.createElement("p")
+        textEl.innerText = data[i].text
+        div.appendChild(textEl)
+
+        let hr = document.createElement("hr")
+        div.appendChild(hr)
+    }  
+   
+    
+}
+
 
 
 async function getRandomPoem() {
-   // const id = Math.floor(Math.random() * 7);
+
     const arrayofPoems = await fetch("/randPoems/", {method: "GET"})
     const data = await arrayofPoems.json()
 
@@ -38,8 +59,10 @@ function addPoem() {
 }
 
 function thankYouMsg() {
-    alert("Thank you for your contribution! Your poem has been saved!")
+    if(!alert("Thank you for your contribution! Your poem has been saved!"))
+    {window.location.reload()}
 }
+
 
 
 async function makeRequest(url, reqMethod, body) {
@@ -51,7 +74,6 @@ async function makeRequest(url, reqMethod, body) {
     })
     console.log(response)
     const data = await response.json()
-    console.log(data)
 }
 
 
@@ -81,10 +103,12 @@ req.addEventListener("load", function(){
             document.getElementById("video").src = response.url; } 
             else {
                 document.getElementById("video").style.display = "none";
-            }
+            } 
 
     console.log(response)
   }
 })
+
+
 
 
